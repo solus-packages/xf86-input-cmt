@@ -1,0 +1,19 @@
+name       : xf86-input-cmt
+version    : 2.0.2
+release    : 1
+source     :
+    - https://github.com/hugegreenbug/xf86-input-cmt/archive/v2.0.2.tar.gz : 451cf48cfa1a1ad6d7202cacd16588ce36209d7d387693a479cc5802a46b6032
+license    : BSD-3-Clause
+summary    : X11 ChromiumOS touchpad driver ported to Linux
+description: |
+    X11 ChromiumOS touchpad driver ported to Linux
+builddeps  :
+    - pkgconfig(xorg-server)
+    - pkgconfig(xproto)
+    - pkgconfig(inputproto)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
