@@ -11,6 +11,8 @@ builddeps  :
     - pkgconfig(xorg-server)
     - pkgconfig(xproto)
     - pkgconfig(inputproto)
+    - pkgconfig(libgestures)
+    - pkgconfig(libevdev)
 setup      : |
     %configure
 build      : |
